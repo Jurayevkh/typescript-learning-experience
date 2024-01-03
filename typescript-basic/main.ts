@@ -42,6 +42,31 @@ let array=[]; //here our array gets type an any
 let user:[number,string]=[1,"Rustambek"];//tuples in Typescript ,we give length types and we must fill with values
                                          //in length of types and with that types we can't add other values 
 
+//Enums   
+//So if you know c# or java enums ,concept enum of typescript also like them
+//Write name of members enum recommended to use PascalCase
+enum Regions{Tashkent,Samarkand,Bukhara,Andijan}; //by default typescript compiler gives value starting from 0 and increments
+enum Countrys{Uzbekistan=1,Kazakhstan,Tajikistan,Turkmenistan}; //but here we give value and here starts from 1 and increments
+                                                                //we can give any values to any variable we want
+let myRegion:Regions=Regions.Tashkent
+console.log(myRegion);                                    
+
+//functions 
+//typescript functions almost like javascript funcs. but difference is in ts func. have type of return value and we must annotate types of parameter 
+function funcName(parameter:number,parameter2:string):string/*return type of our function*/{
+    return parameter+parameter2;
+}
+
+funcName(2,"2");//in typescript where we call function we must give parameters exact no more , no less
+                //but in js it's normal that giving additional parameter
+
+function funcName2(parameter:number ,parameter2="string" /*we can give default values in typescript to parameters*/){
+    return parameter+parameter2;
+}
+
+funcName2(2);
+
+
 //Javascript built-in types
   //number
   //string
