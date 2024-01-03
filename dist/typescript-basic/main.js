@@ -16,4 +16,30 @@ let arrayInJS = [1, 3, 12, "23"];
 let arrayInTypescript = [1, 2, "2"];
 let array = [];
 let user = [1, "Rustambek"];
+var Regions;
+(function (Regions) {
+    Regions[Regions["Tashkent"] = 0] = "Tashkent";
+    Regions[Regions["Samarkand"] = 1] = "Samarkand";
+    Regions[Regions["Bukhara"] = 2] = "Bukhara";
+    Regions[Regions["Andijan"] = 3] = "Andijan";
+})(Regions || (Regions = {}));
+;
+var Countrys;
+(function (Countrys) {
+    Countrys[Countrys["Uzbekistan"] = 1] = "Uzbekistan";
+    Countrys[Countrys["Kazakhstan"] = 2] = "Kazakhstan";
+    Countrys[Countrys["Tajikistan"] = 3] = "Tajikistan";
+    Countrys[Countrys["Turkmenistan"] = 4] = "Turkmenistan";
+})(Countrys || (Countrys = {}));
+;
+let myRegion = Regions.Tashkent;
+console.log(myRegion);
+function funcName(parameter, parameter2) {
+    return parameter + parameter2;
+}
+funcName(2, "2");
+function funcName2(parameter, parameter2 = "string") {
+    return parameter + parameter2;
+}
+funcName2(2);
 //# sourceMappingURL=main.js.map
