@@ -134,6 +134,17 @@ type Sum = 25 | 60; //with vertical bar we limit the values
 let sum:Sum=25; 
 let sum1:Sum=34; //but if we give wrong value we get a error
 
+//Nullable type
+//With nullabling parameter or something you can make them optional to giving value
+function displayOnLog(value:string|null):void{
+    if(value)
+        console.log(value);
+    else
+        console.log("null");
+}
+
+displayOnLog(null);//and calling function you can give null parameter
+
 //Javascript built-in types
   //number
   //string
