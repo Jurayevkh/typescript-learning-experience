@@ -95,6 +95,16 @@ age:number
 let secondPlayer:Player={id:1,name:"Kroos",age:34};
 
 
+//Union types
+//With union types we can give values or paramter to method or variable more than one type
+function print(value:number|string):void{
+    //if here write parameter and check methods you can see only methods common on types that we give on parameter
+    if(typeof value==='number')
+        console.log(value);   //you may not write scope if you logic of operator in one line
+    else if(typeof value=='string')
+        console.log(value); //but after checking type you can see only methods that have on this type
+}
+
 //Javascript built-in types
   //number
   //string
