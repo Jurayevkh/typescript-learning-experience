@@ -42,4 +42,30 @@ function funcName2(parameter, parameter2 = "string") {
     return parameter + parameter2;
 }
 funcName2(2);
+let customer = { id: 1, name: "Abdurauf" };
+customer.age = 23;
+let player = { id: 1, name: "Benzema", age: 38 };
+let secondPlayer = { id: 1, name: "Kroos", age: 34 };
+function print(value) {
+    if (typeof value === 'number')
+        console.log(value);
+    else if (typeof value == 'string')
+        console.log(value);
+}
+let dogRobot;
+dogRobot = {
+    name: "Buddy",
+    bark: () => { },
+    serialNumber: 123,
+    compute: () => { }
+};
+let sum = 25;
+let sum1 = 34;
+function displayOnLog(value) {
+    if (value)
+        console.log(value);
+    else
+        console.log("null");
+}
+displayOnLog(null);
 //# sourceMappingURL=main.js.map
