@@ -126,7 +126,13 @@ dogRobot = {
     serialNumber: 123,
     compute: () => { }
 };
-    
+
+
+//Literal types
+//Literal types is limiting given value in other words given value is exact value that we limited ,for example:
+type Sum = 25 | 60; //with vertical bar we limit the values
+let sum:Sum=25; 
+let sum1:Sum=34; //but if we give wrong value we get a error
 
 //Javascript built-in types
   //number
