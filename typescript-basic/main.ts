@@ -67,6 +67,19 @@ function funcName2(parameter:number ,parameter2="string" /*we can give default v
 funcName2(2);
 
 
+//Objects
+//Objects in Javascript are Dynamic:
+let customer={id:1,name:"Abdurauf"};
+//you can add new property to object in JS like this:
+customer.age=23; //but you can see it is impossible in typescript. We get a error "doesn't exist"
+//so you can declare and give type to properties in typescript, let me show you :
+let player:{
+    readonly id:number,//we can make properties readonly and after that we can't change value of this property in out
+    name:string,
+    age?:number/*this property is nullable and giving value to this property optional*/}
+    ={ id:1,name:"Benzema",age:38};
+
+
 //Javascript built-in types
   //number
   //string
