@@ -80,6 +80,21 @@ let player:{
     ={ id:1,name:"Benzema",age:38};
 
 
+//Type alias
+//In previuos theme we talk about objects and this way to declaring objects is not readable and difficult to using
+//and it's doesn't fit DRY principle (don't repeat yourself), ok you may have question like "what we can do"
+//we need type aliases for condition like this:
+type Player={
+readonly id:number,
+name:string,
+age:number
+}
+
+//if you know about classes in c#, java or other language ,logic of type aliases like them, that's it
+
+let secondPlayer:Player={id:1,name:"Kroos",age:34};
+
+
 //Javascript built-in types
   //number
   //string
